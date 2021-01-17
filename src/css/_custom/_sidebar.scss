@@ -1,0 +1,30 @@
+.menu {
+  h6 {
+    margin: 0;
+    overflow: hidden;
+    font-size: 1rem;
+    color: map-get($theme-colors, "primary");
+  }
+  h6 span {
+    position: relative;
+    display: inline-block;
+    margin: 0 2.5em;
+    padding: 0 1em;
+    text-align: left;
+  }
+  h6 span::before,
+  h6 span::after {
+    position: absolute;
+    top: 50%;
+    content: "";
+    width: 400%;
+    height: 1px;
+    background-color: map-get($theme-colors, "primary");
+  }
+  h6 span::before {
+    right: 100%;
+  }
+  h6 span::after {
+    left: 100%;
+  }
+}

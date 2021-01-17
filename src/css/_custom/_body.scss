@@ -1,0 +1,17 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+//隱藏number按鈕時的上下箭頭
+// .numberSpinHide
+div div div input[type="number"]::-webkit-outer-spin-button,
+div div div input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+//input select 相關的 rule 位置調整
+.q-field__bottom {
+  padding-top: 2.5px !important;
+}

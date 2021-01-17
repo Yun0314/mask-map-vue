@@ -1,0 +1,17 @@
+.leaflet-popup-content {
+  //   width: auto !important;
+  //   max-width: 500px !important;
+}
+.chip {
+  //   background: map-get($theme-colors, "secondary");
+  color: map-get($theme-colors, "white");
+  border-radius: 15px;
+  font-size: 12px;
+  height: 2em;
+  max-width: 100%;
+  padding: 0.5em 0.9em;
+  margin: 4px;
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
