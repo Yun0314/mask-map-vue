@@ -9,7 +9,7 @@
         <q-btn round flat color="grey" icon="clear" v-close-popup />
       </q-toolbar>
       <!-- 全台比 -->
-      <q-card-section class="row">
+      <q-card-section class="row justify-center">
         <div
           :class="`text-${data.color} q-ma-lg text-center`"
           v-for="(data, index) in statistics"
@@ -32,7 +32,10 @@
       </q-card-section>
       <q-separator />
       <!-- 地區比 -->
-      <q-card-section class="row" v-if="Object.keys(mapInfo).length > 0">
+      <q-card-section
+        class="row justify-center"
+        v-if="Object.keys(mapInfo).length > 0"
+      >
         <div
           :class="`text-${data.color} q-ma-lg text-center`"
           v-for="(data, index) in statistics"
